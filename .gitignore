@@ -1,0 +1,23 @@
+# Sanal ortam / editör
+.venv/
+venv/
+.vscode/
+__pycache__/
+*.pyc
+
+# Veri setleri (Kaggle'dan indirilir, depoya konmaz)
+KAGGLE_dataset/
+data/
+
+# Model dosyaları: sadece nihai model depoya girer (~30 MB)
+*.pth
+!best_unet_kaggle_split_100ep.pth
+
+# test.py çıktıları (sonuç CSV'si results/ altında)
+predictions/
+
+# Eski deneme betikleri ve çıktıları (yalnızca yerelde)
+experiments/
+
+# Rapor çalışma kopyaları / Office geçici dosyaları
+~$*
